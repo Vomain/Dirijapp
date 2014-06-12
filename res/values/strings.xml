@@ -42,7 +42,7 @@
     <string name="password">Password</string>
     <string name="enter_password">Enter your password for admin</string>
     <string name="title_activity_camera__view__admin">Camera_View_Admin</string>
-    <string	name="zoomin">Zoom +</string>
+    <string	name="zoomin">Zom +</string>
     <string	name="zoomout">Zoom -</string>
     <string name="pause">Pause</string>
 	<string name="rec">Rec</string>
