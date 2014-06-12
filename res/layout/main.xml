@@ -21,36 +21,45 @@
             android:layout_gravity="center"
             android:layout_weight="1" >
 
-            <RelativeLayout
-                android:id="@+id/relativeLayout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true" >
-
-                <Button
-                    android:id="@+id/zoomin"
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/zoomin"
-                    android:textColor="#FFFFFF"
-                    android:textSize="30sp" />
-
-            </RelativeLayout>
-
             <Button
                 android:id="@+id/zoomout"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/relativeLayout1"
-                android:layout_alignRight="@+id/relativeLayout1"
-                android:layout_below="@+id/relativeLayout1"
+                android:layout_alignLeft="@+id/Button01"
+                android:layout_alignRight="@id/Button01"
+                android:layout_below="@id/Button01"
                 android:text="@string/zoomout"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
+            <Button
+                android:id="@id/Button01"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="@string/zoomin"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/zoomin"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/Button01"
+                android:layout_alignTop="@id/Button01"
+                android:layout_below="@+id/zoomout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:text="@string/zoomin"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+ />
         </RelativeLayout>
 
         <RelativeLayout
@@ -83,13 +92,25 @@
             android:layout_weight="1" >
 
             <Button
+                android:id="@+id/Button02"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"                
+                android:text="@string/zoomin"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+            <Button
                 android:id="@+id/picture"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginBottom="62dp"
+                android:layout_alignLeft="@+id/Button02"
+                android:layout_alignRight="@+id/Button02"
+                android:layout_centerVertical="true"
                 android:text="@string/picture"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
@@ -99,9 +120,9 @@
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/picture"
-                android:layout_alignParentLeft="true"
-                android:layout_alignRight="@+id/picture"
+                android:layout_alignLeft="@+id/picture"
+                android:layout_alignRight="@+id/Button02"
+                android:layout_below="@+id/Button02"
                 android:padding="5dp"
                 android:paddingLeft="0dp"
                 android:text="@string/display"
