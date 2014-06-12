@@ -21,13 +21,15 @@
 
     <Button
         android:id="@+id/zoomout"
-        style="?android:attr/buttonStyleSmall"
+        style="?android:attr/buttonStyleSmall"        
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/Button03"
         android:layout_alignLeft="@id/Button03"
         android:layout_alignRight="@id/Button03"
-        android:text="@string/zoomout" />
+        android:text="@string/zoomout"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/zoomin"
@@ -37,7 +39,9 @@
         android:layout_above="@id/zoomout"
         android:layout_alignLeft="@id/Button03"
         android:layout_alignRight="@id/zoomout"
-        android:text="@string/zoomin" />
+        android:text="@string/zoomin"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/Button03"
@@ -49,7 +53,8 @@
         android:layout_marginBottom="76dp"
         android:layout_marginLeft="45dp"
         android:text="@string/zoomin"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/picture"
@@ -81,6 +86,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
         android:textOff="Stop"
-        android:textOn="Record" />
+        android:textOn="Record"
+         />
 
 </RelativeLayout>
