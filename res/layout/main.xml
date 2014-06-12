@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+    <com.camera.simplemjpeg.MjpegView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/record"
+        android:layout_alignLeft="@id/record"
+        android:layout_alignRight="@id/record" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/zoomout"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Button03"
+        android:layout_alignLeft="@id/Button03"
+        android:layout_alignRight="@id/Button03"
+        android:text="@string/zoomout" />
+
+    <Button
+        android:id="@+id/zoomin"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/zoomout"
+        android:layout_alignLeft="@id/Button03"
+        android:layout_alignRight="@id/zoomout"
+        android:text="@string/zoomin" />
+
+    <Button
+        android:id="@+id/Button03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="76dp"
+        android:layout_marginLeft="45dp"
+        android:text="@string/zoomin"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/picture"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/display"
+        android:layout_alignRight="@+id/display"
+        android:text="@string/picture" />
+
+    <Button
+        android:id="@+id/display"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zoomout"
+        android:layout_alignBottom="@+id/zoomout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:padding="5dp"
+        android:paddingLeft="0dp"
+        android:text="@string/display" />
+
+    <Switch
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:textOff="Stop"
+        android:textOn="Record" />
+
+</RelativeLayout>
